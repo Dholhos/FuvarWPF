@@ -1,0 +1,40 @@
+﻿<Window x:Class="Doga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Doga"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Fálj beolvass!" Width="80" x:Name="btnFaljBe" Background="Red" Click="btnFaljBe_Click"/>
+        
+        <Button Content="Számol!" Width="80" x:Name="btnSzamol" Grid.Row="1" Click="btnSzamol_Click"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="Üres" x:Name="lblCount" VerticalAlignment="Center"/>
+
+        <Button Content="Bevétel!" Width="80" x:Name="btnbevetel" Grid.Row="2" Click="btnbevetel_Click"/>
+        <Label Grid.Column="1" Grid.Row="2" Content="Üres" x:Name="lblBevetel" VerticalAlignment="Center"/>
+
+        <Button Content="Fizetési módok!" Width="80" x:Name="btnFizetesiMod" Grid.Row="3" Click="btnFizetesiMod_Click"/>
+        <ListBox x:Name="lbFizetésiModok" Grid.Row="3" Grid.Column="1"/>
+
+        <Button Content="Megtett táv!" Width="80" x:Name="btnMegtettTav" Grid.Row="4" Click="btnMegtettTav_Click"/>
+        <Label Grid.Column="1" Grid.Row="4" Content="Üres" x:Name="lblMegtettTav" VerticalAlignment="Center"/>
+
+        <Button Content="Leghosszabb!" Width="80" x:Name="btnLeghosszabb" Grid.Row="5" Click="btnLeghosszabb_Click"/>
+        <ListBox x:Name="lbLeghosszabb" Grid.Row="5" Grid.Column="1"/>
+
+    </Grid>
+</Window>
